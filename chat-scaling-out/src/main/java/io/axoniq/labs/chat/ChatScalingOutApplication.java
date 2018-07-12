@@ -59,7 +59,7 @@ public class ChatScalingOutApplication {
 	        return new SpringAMQPMessageSource(serializer) {
                 @RabbitListener(queues = "participant-events", exclusive = true)
 	            @Override
-                public void onMessage(Message message, Channel channel) throws Exception {
+                public void onMessage(Message message, Channel channel) {
                     super.onMessage(message, channel);
                 }
             };
