@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.axonframework</groupId>
             <artifactId>axon-amqp</artifactId>
-            <version>3.0.6</version>
+            <version>${axon.version}</version>
         </dependency>
         <dependency>
 			<groupId>org.springframework.boot</groupId>
